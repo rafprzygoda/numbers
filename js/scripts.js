@@ -1,4 +1,4 @@
-// Zadanie 8.6
+// Excercise 8.6
 
 var a = prompt('Podaj pierwsza liczbe');
 if (a == parseInt(a)) {
