@@ -1,23 +1,16 @@
 // Excercise 8.6
+// New version of script, more simple. JSHint approved. 
 
-var a = prompt('Podaj pierwsza liczbe');
-if (a == parseInt(a)) {
-    var b = prompt('Podaj druga liczbe');
-}
-if (b == parseInt(b)) {
-    summary = (a * a) + (2 * a * b) - (b * b);
-    console.log(summary);
-		
-if (summary > 0) {
-    alert('Liczba dodatnia');
-}
-else if (summary < 0) {
-    alert('Liczba ujemna');	
-}
-else {
-    alert('Wynik rowny zero');	
-}
-}
-else {
-    alert("Liczbe prosilem a nie litere");
+var a = prompt("podaj liczbę");
+var b = prompt("podaj liczbę");
+var number = (a * a) + (2 * a * b) - (b * b);
+console.log(number);
+if (a == parseInt(a) && b == parseInt(b) && number > 0) {
+    alert(number + ' to jest liczba dodatnia');
+} else if (a == parseInt(a) && b == parseInt(b) && number < 0) {
+    alert(number + ' to jest liczba ujemna');
+} else if (a == parseInt(a) && b == parseInt(b) && number === 0) {
+    alert(number + ' wynik równy zero');
+} else {
+    alert("nie podałes liczb");
 }
